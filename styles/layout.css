@@ -1,0 +1,149 @@
+/* ============================================================
+   layout.css — Responsive breakpoints y media queries
+   Conecta Familias
+   ============================================================ */
+
+/* ── FORM ROW ────────────────────────────────────────────── */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+/* ── TABLET / MEDIUM ─────────────────────────────────────── */
+@media (max-width: 1024px) {
+
+  /* Hero */
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 120px;
+  }
+  .hero-visual {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Mission */
+  .mission {
+    grid-template-columns: 1fr;
+  }
+  .mission-visual {
+    max-width: 480px;
+  }
+
+  /* Programs */
+  .programs-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Impact */
+  .impact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Team */
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* CTA Band */
+  .cta-band {
+    grid-template-columns: 1fr;
+  }
+  .cta-buttons {
+    flex-direction: row;
+  }
+
+  /* Footer */
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Steps */
+  .steps {
+    grid-template-columns: 1fr 1fr;
+  }
+  .steps::before {
+    display: none;
+  }
+
+  /* Donate */
+  .donate-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── MOBILE / SMALL ──────────────────────────────────────── */
+@media (max-width: 640px) {
+
+  /* Nav */
+  nav ul {
+    display: none;
+  }
+  nav ul.open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    inset: 0;
+    top: 70px;
+    background: var(--sand);
+    padding: 40px 5%;
+    gap: 24px;
+    align-items: flex-start;
+    z-index: 99;
+  }
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 100px 5% 60px;
+  }
+  .hero-stats {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .hero-card-1 { height: 280px; }
+
+  /* Floating badges */
+  .floating-badge.badge-1,
+  .floating-badge.badge-2 {
+    display: none;
+  }
+
+  /* Programs */
+  .programs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Impact */
+  .impact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Testimonials */
+  .testi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Team */
+  .team-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Steps */
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  /* Form */
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
