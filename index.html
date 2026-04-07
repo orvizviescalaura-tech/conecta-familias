@@ -3,585 +3,433 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Conecta Familias — Tecnología con propósito</title>
-
-  <!-- Fonts -->
+  <title>Tecnología Para Todos · TPT</title>
+  <meta name="description" content="ONG dedicada a llevar recursos digitales a familias sin recursos en Asturias. Donamos dispositivos, formamos y acompañamos." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet" />
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles/layout.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
 </head>
 <body>
 
-<!-- ── NAV ──────────────────────────────────────────────── -->
-<nav id="main-nav">
-  <a href="#" class="logo">
-    <div class="logo-icon">🌐</div>
-    <div>
-      <div class="logo-text">Conecta Familias</div>
-      <div class="logo-sub">ONG · España</div>
-    </div>
-  </a>
-  <ul id="nav-links">
-    <li><a href="#mision">Misión</a></li>
-    <li><a href="#programas">Programas</a></li>
-    <li><a href="#impacto">Impacto</a></li>
-    <li><a href="#equipo">Equipo</a></li>
-    <li><a href="#contacto">Contacto</a></li>
-    <li>
-      <a href="#donar" class="btn btn-primary" style="padding:10px 22px;font-size:.85rem;">
-        Donar ahora
+  <!-- NAV -->
+  <nav class="nav" id="nav">  
+    <div class="nav__inner container">
+      <a href="#inicio" class="nav__brand">
+        <img src="assets/images/logo.png" alt="Logo TPT" class="nav__logo" />
+        <span class="nav__name">TPT</span>
       </a>
-    </li>
-  </ul>
-  <div class="hamburger" id="hamburger" aria-label="Menú">
-    <span></span><span></span><span></span>
-  </div>
-</nav>
-
-<!-- ── HERO ─────────────────────────────────────────────── -->
-<section class="hero" id="inicio">
-  <div class="hero-content">
-    <div class="hero-tag">
-      <span class="hero-tag-dot"></span>
-      Transformando vidas digitalmente
-    </div>
-    <h1 class="reveal">
-      Ninguna familia<br>
-      sin <em>conexión</em><br>
-      al futuro
-    </h1>
-    <p class="reveal reveal-delay-1">
-      Llevamos dispositivos, internet y formación digital a familias en riesgo
-      de exclusión. Porque la brecha tecnológica es también una brecha de oportunidades.
-    </p>
-    <div class="hero-ctas reveal reveal-delay-2">
-      <a href="#donar" class="btn btn-amber btn-lg">💛 Apoyar la causa</a>
-      <a href="#mision" class="btn btn-outline btn-lg">Conocer más →</a>
-    </div>
-    <div class="hero-stats reveal reveal-delay-3">
-      <div class="stat-item">
-        <span class="stat-num" data-count="3200">0</span>
-        <span class="stat-label">Familias conectadas</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-num" data-count="47">0</span>
-        <span class="stat-label">Municipios cubiertos</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-num" data-count="98">0</span>
-        <span class="stat-label">% satisfacción</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="hero-visual reveal reveal-delay-1">
-    <div class="hero-card hero-card-1" style="position:relative;">
-      <img
-        src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80"
-        alt="Familia usando tablet"
-        loading="lazy"
-      />
-      <div class="card-overlay"><p>Proyecto Semillas, Madrid 2024</p></div>
-      <div class="floating-badge badge-1">
-        <span class="badge-icon">📶</span>
-        <div class="badge-text">
-          <strong>+1.200 hogares</strong>con conexión este año
-        </div>
-      </div>
-    </div>
-    <div class="hero-card hero-card-2">
-      <img
-        src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=400&q=80"
-        alt="Niños aprendiendo"
-        loading="lazy"
-      />
-    </div>
-    <div class="hero-card hero-card-3">
-      <div class="card-quote">
-        <div class="quote-icon">"</div>
-        <p>Mis hijos ya pueden hacer los deberes en casa. Es un cambio enorme.</p>
-        <span>— María G., beneficiaria</span>
-      </div>
-    </div>
-    <div class="floating-badge badge-2">
-      <span class="badge-icon">🏆</span>
-      <div class="badge-text"><strong>Premio Social</strong>2024 · ONCE</div>
-    </div>
-  </div>
-</section>
-
-<!-- ── STRIP ─────────────────────────────────────────────── -->
-<div class="strip">
-  <div class="strip-item">Colaboramos con Ayuntamientos</div>
-  <div class="strip-item">Programa FEDER Europeo</div>
-  <div class="strip-item">Red de Tercer Sector</div>
-  <div class="strip-item">Cruz Roja Digital</div>
-  <div class="strip-item">Fundación Telefónica</div>
-  <div class="strip-item">FEMP · Municipios</div>
-</div>
-
-<!-- ── MISSION ──────────────────────────────────────────── -->
-<section class="mission" id="mision">
-  <div class="mission-visual reveal">
-    <div class="mission-img-wrap">
-      <img
-        src="https://images.unsplash.com/photo-1773332598413-a6d5279d1ae8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="Formadora con familia"
-        loading="lazy"
-      />
-    </div>
-    <div class="mission-pill">
-      <span>8 años</span>
-      cambiando vidas
-    </div>
-  </div>
-  <div>
-    <span class="section-label reveal">Nuestra razón de ser</span>
-    <h2 class="section-title reveal reveal-delay-1">
-      La tecnología es un derecho, <em>no un privilegio</em>
-    </h2>
-    <p class="section-body reveal reveal-delay-2">
-      Fundada en 2015, Conecta Familias nació con una idea sencilla pero poderosa:
-      que ningún niño debería quedarse atrás por no tener internet en casa.
-      Hoy somos un equipo de más de 60 personas trabajando en toda España.
-    </p>
-    <div class="mission-values reveal reveal-delay-3">
-      <div class="value-item">
-        <div class="value-icon">🤝</div>
-        <div>
-          <div class="value-title">Dignidad ante todo</div>
-          <div class="value-body">
-            Trabajamos con las familias, no para ellas.
-            Su voz guía cada decisión que tomamos.
-          </div>
-        </div>
-      </div>
-      <div class="value-item">
-        <div class="value-icon">📡</div>
-        <div>
-          <div class="value-title">Acceso real y sostenible</div>
-          <div class="value-body">
-            No solo damos dispositivos: garantizamos conectividad,
-            formación y acompañamiento continuo.
-          </div>
-        </div>
-      </div>
-      <div class="value-item">
-        <div class="value-icon">🌱</div>
-        <div>
-          <div class="value-title">Impacto medible</div>
-          <div class="value-body">
-            Evaluamos cada proyecto con indicadores claros para asegurar
-            que el cambio es real y duradero.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── PROGRAMS ─────────────────────────────────────────── -->
-<section class="programs" id="programas">
-  <div class="text-center">
-    <span class="section-label reveal">Lo que hacemos</span>
-    <h2 class="section-title reveal reveal-delay-1">Programas que <em>transforman</em></h2>
-    <p class="section-body reveal reveal-delay-2">
-      Tres líneas de acción complementarias para atacar la exclusión digital desde todos los ángulos.
-    </p>
-  </div>
-  <div class="programs-grid">
-    <div class="program-card reveal">
-      <span class="prog-num">01</span>
-      <span class="prog-icon">💻</span>
-      <div class="prog-title">Equipos para Todos</div>
-      <p class="prog-body">
-        Recogemos, reacondicionamos y distribuimos dispositivos donados por empresas
-        a familias que no pueden permitirse uno. Cada equipo llega listo para usarse.
-      </p>
-      <div class="prog-tags">
-        <span class="prog-tag">Ordenadores</span>
-        <span class="prog-tag">Tablets</span>
-        <span class="prog-tag">Móviles</span>
-      </div>
-    </div>
-    <div class="program-card featured reveal reveal-delay-1">
-      <span class="prog-num">02</span>
-      <span class="prog-icon">📡</span>
-      <div class="prog-title">Conexión Sin Barreras</div>
-      <p class="prog-body">
-        Subvencionamos tarifas de internet para familias en riesgo de exclusión.
-        Negociamos con operadores para lograr tarifas sociales accesibles de verdad.
-      </p>
-      <div class="prog-tags">
-        <span class="prog-tag">Internet hogar</span>
-        <span class="prog-tag">Datos móviles</span>
-        <span class="prog-tag">Cobertura rural</span>
-      </div>
-    </div>
-    <div class="program-card reveal reveal-delay-2">
-      <span class="prog-num">03</span>
-      <span class="prog-icon">🎓</span>
-      <div class="prog-title">Escuela Digital</div>
-      <p class="prog-body">
-        Talleres presenciales y online para adultos y niños: desde los básicos de internet
-        hasta seguridad digital, trámites online y uso seguro de redes sociales.
-      </p>
-      <div class="prog-tags">
-        <span class="prog-tag">Adultos mayores</span>
-        <span class="prog-tag">Infancia</span>
-        <span class="prog-tag">Empleabilidad</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── HOW IT WORKS ──────────────────────────────────────── -->
-<section class="how">
-  <div class="text-center">
-    <span class="section-label reveal">Proceso</span>
-    <h2 class="section-title reveal reveal-delay-1">¿Cómo <em>funciona</em>?</h2>
-  </div>
-  <div class="steps">
-    <div class="step reveal">
-      <div class="step-num">1</div>
-      <h3>Identificamos</h3>
-      <p>
-        Trabajamos con servicios sociales y entidades locales para detectar
-        familias en situación de exclusión digital.
-      </p>
-    </div>
-    <div class="step reveal reveal-delay-1">
-      <div class="step-num">2</div>
-      <h3>Evaluamos</h3>
-      <p>
-        Un equipo de educadores visita el hogar y analiza las necesidades
-        específicas de cada familia de forma personalizada.
-      </p>
-    </div>
-    <div class="step reveal reveal-delay-2">
-      <div class="step-num">3</div>
-      <h3>Actuamos</h3>
-      <p>
-        Entregamos los recursos necesarios: dispositivo, conexión y acceso
-        a los talleres de formación adaptados a su nivel.
-      </p>
-    </div>
-    <div class="step reveal reveal-delay-3">
-      <div class="step-num">4</div>
-      <h3>Acompañamos</h3>
-      <p>
-        No desaparecemos. Hacemos seguimiento durante 12 meses para asegurar
-        que la inclusión es real y sostenida.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- ── IMPACT ────────────────────────────────────────────── -->
-<section class="impact" id="impacto">
-  <div class="text-center">
-    <span class="section-label reveal">Datos reales</span>
-    <h2 class="section-title reveal reveal-delay-1">El <em>impacto</em> en cifras</h2>
-    <p class="section-body reveal reveal-delay-2">
-      Cada número es una familia, una historia, un futuro abierto.
-    </p>
-  </div>
-  <div class="impact-grid">
-    <div class="impact-item reveal">
-      <span class="impact-num" data-count="3200">0</span>
-      <div class="impact-label">
-        <strong>Familias beneficiadas</strong>desde nuestra fundación
-      </div>
-    </div>
-    <div class="impact-item reveal reveal-delay-1">
-      <span class="impact-num" data-count="5800">0</span>
-      <div class="impact-label">
-        <strong>Dispositivos distribuidos</strong>reacondicionados y listos
-      </div>
-    </div>
-    <div class="impact-item reveal reveal-delay-2">
-      <span class="impact-num" data-count="12400">0</span>
-      <div class="impact-label">
-        <strong>Personas formadas</strong>en competencias digitales
-      </div>
-    </div>
-    <div class="impact-item reveal reveal-delay-3">
-      <span class="impact-num" data-count="47">0</span>
-      <div class="impact-label">
-        <strong>Municipios</strong>en 12 comunidades autónomas
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── TESTIMONIALS ──────────────────────────────────────── -->
-<section class="testimonials">
-  <span class="section-label reveal">Voces reales</span>
-  <h2 class="section-title reveal reveal-delay-1">Lo que dicen <em>las familias</em></h2>
-  <div class="testi-grid">
-    <div class="testi-card large reveal">
-      <div class="testi-stars">★★★★★</div>
-      <p class="testi-quote">
-        "Antes mis hijos tenían que ir a la biblioteca a hacer los deberes.
-        Ahora tienen internet en casa y mi hija mayor empezó un curso online
-        de programación. No me lo puedo creer todavía."
-      </p>
-      <div class="testi-author">
-        <div class="testi-avatar">👩</div>
-        <div>
-          <div class="testi-name">Fátima Ben Ali</div>
-          <div class="testi-role">Madre de 3 hijos · Sevilla</div>
-        </div>
-      </div>
-    </div>
-    <div class="testi-right">
-      <div class="testi-card reveal reveal-delay-1">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-quote">
-          "El taller de internet para mayores fue un antes y un después.
-          Ahora pido cita con el médico solo, sin molestar a mis hijos."
-        </p>
-        <div class="testi-author">
-          <div class="testi-avatar">👴</div>
-          <div>
-            <div class="testi-name">Manuel Rodríguez</div>
-            <div class="testi-role">Jubilado · Badajoz</div>
-          </div>
-        </div>
-      </div>
-      <div class="testi-badge-strip reveal reveal-delay-2">
-        <p>Hogares satisfechos con el programa</p>
-        <div class="big-num">98%</div>
-        <span>Encuesta anual de impacto 2024</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── TEAM ──────────────────────────────────────────────── -->
-<section class="team" id="equipo">
-  <div class="text-center">
-    <span class="section-label reveal">Las personas</span>
-    <h2 class="section-title reveal reveal-delay-1">Un equipo con <em>propósito</em></h2>
-    <p class="section-body reveal reveal-delay-2">
-      Más de 60 profesionales y 200 voluntarios comprometidos con la inclusión digital.
-    </p>
-  </div>
-  <div class="team-grid">
-    <div class="team-card reveal">
-      <div class="team-avatar-wrap">
-        <div class="team-emoji">👩‍💼</div>
-        <div class="team-overlay">
-          <div class="team-social">
-            <a href="#">in</a><a href="#">✉</a>
-          </div>
-        </div>
-      </div>
-      <div class="team-name">Laura Sánchez</div>
-      <div class="team-role">Directora General</div>
-    </div>
-    <div class="team-card reveal reveal-delay-1">
-      <div class="team-avatar-wrap">
-        <div class="team-emoji">👨‍💻</div>
-        <div class="team-overlay">
-          <div class="team-social">
-            <a href="#">in</a><a href="#">✉</a>
-          </div>
-        </div>
-      </div>
-      <div class="team-name">Iñigo Etxebarria</div>
-      <div class="team-role">Director de Proyectos</div>
-    </div>
-    <div class="team-card reveal reveal-delay-2">
-      <div class="team-avatar-wrap">
-        <div class="team-emoji">👩‍🏫</div>
-        <div class="team-overlay">
-          <div class="team-social">
-            <a href="#">in</a><a href="#">✉</a>
-          </div>
-        </div>
-      </div>
-      <div class="team-name">Carmen López</div>
-      <div class="team-role">Responsable de Formación</div>
-    </div>
-    <div class="team-card reveal reveal-delay-3">
-      <div class="team-avatar-wrap">
-        <div class="team-emoji">👨‍🎨</div>
-        <div class="team-overlay">
-          <div class="team-social">
-            <a href="#">in</a><a href="#">✉</a>
-          </div>
-        </div>
-      </div>
-      <div class="team-name">Javier Morales</div>
-      <div class="team-role">Comunicación y Captación</div>
-    </div>
-  </div>
-</section>
-
-<!-- ── CTA BAND ──────────────────────────────────────────── -->
-<div class="cta-band">
-  <div>
-    <h2>¿Listo para <em>marcar la diferencia</em>?</h2>
-    <p>Cada euro conecta a una familia con un futuro mejor. Únete a más de 4.000 donantes.</p>
-  </div>
-  <div class="cta-buttons">
-    <a href="#donar" class="btn btn-amber btn-lg">Donar ahora</a>
-    <a
-      href="mailto:hola@conectafamilias.org"
-      class="btn btn-outline btn-lg"
-      style="border-color:rgba(255,255,255,0.4);color:white;"
-    >
-      Colaborar →
-    </a>
-  </div>
-</div>
-
-<!-- ── DONATE ────────────────────────────────────────────── -->
-<section class="donate" id="donar">
-  <span class="section-label reveal">Tu apoyo importa</span>
-  <h2 class="section-title reveal reveal-delay-1">Haz tu <em>donación</em></h2>
-  <div class="donate-grid">
-    <div class="donate-tiers reveal">
-      <div class="tier-card active" data-amount="10">
-        <div class="tier-amount">10€</div>
-        <div class="tier-desc">
-          <strong>Semilla digital</strong>
-          <span>Cubre el coste de datos móviles de una familia durante un mes</span>
-        </div>
-        <span class="tier-emoji">🌱</span>
-      </div>
-      <div class="tier-card" data-amount="25">
-        <div class="tier-amount">25€</div>
-        <div class="tier-desc">
-          <strong>Conexión básica</strong>
-          <span>Financia un taller de alfabetización digital completo</span>
-        </div>
-        <span class="tier-emoji">📶</span>
-      </div>
-      <div class="tier-card" data-amount="50">
-        <div class="tier-amount">50€</div>
-        <div class="tier-desc">
-          <strong>Puente digital</strong>
-          <span>Acondiciona un ordenador y lo entrega a una familia</span>
-        </div>
-        <span class="tier-emoji">💻</span>
-      </div>
-      <div class="tier-card" data-amount="100">
-        <div class="tier-amount">100€</div>
-        <div class="tier-desc">
-          <strong>Transformación total</strong>
-          <span>Conecta un hogar: dispositivo + internet + formación</span>
-        </div>
-        <span class="tier-emoji">🏠</span>
-      </div>
-    </div>
-    <div class="donate-form reveal reveal-delay-1">
-      <h3>Donar con seguridad</h3>
-      <p>Tu donación es segura, deducible fiscalmente y llega directamente a las familias.</p>
-      <div class="form-group">
-        <label>Importe (€)</label>
-        <input type="number" id="donate-amount" value="10" min="1" placeholder="Introduce el importe" />
-      </div>
-      <div class="form-row">
-        <div class="form-group">
-          <label>Nombre</label>
-          <input type="text" placeholder="Tu nombre" />
-        </div>
-        <div class="form-group">
-          <label>Apellidos</label>
-          <input type="text" placeholder="Tus apellidos" />
-        </div>
-      </div>
-      <div class="form-group">
-        <label>Email</label>
-        <input type="email" placeholder="tu@email.com" />
-      </div>
-      <div class="form-group">
-        <label>NIF (para certificado fiscal)</label>
-        <input type="text" placeholder="12345678X" />
-      </div>
-      <button
-        class="btn btn-primary btn-lg"
-        style="width:100%;justify-content:center;margin-top:6px;"
-        onclick="handleDonate(event)"
-      >
-        💛 Donar ahora de forma segura
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#mision">Misión</a></li>
+        <li><a href="#que-hacemos">Qué hacemos</a></li>
+        <li><a href="#impacto">Impacto</a></li>
+        <li><a href="#donantes">Colaboradores</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <a href="#contacto" class="btn btn--accent nav__cta">Donar ahora</a>
+      <button class="nav__burger" id="burger" aria-label="Menú">
+        <span></span><span></span><span></span>
       </button>
-      <p class="privacy-note">🔒 Pago seguro · Certificado de donación · Deducción fiscal hasta 80%</p>
     </div>
-  </div>
-</section>
+  </nav>
 
-<!-- ── FOOTER ────────────────────────────────────────────── -->
-<footer id="contacto">
-  <div class="footer-top">
-    <div class="footer-brand">
-      <a href="#" class="logo">
-        <div class="logo-icon">🌐</div>
-        <div>
-          <div class="logo-text">Conecta Familias</div>
-          <div class="logo-sub">ONG · Inscrita en el Registro Nacional</div>
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg-grid"></div>
+    <div class="hero__blob hero__blob--1"></div>
+    <div class="hero__blob hero__blob--2"></div>
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <span class="hero__pill">ONG · Asturias</span>
+        <h1 class="hero__headline">
+          Tecnología<br />
+          <em>que une,</em><br />
+          oportunidades<br />
+          <em>que transforma</em>
+        </h1>
+        <p class="hero__sub">
+          Llevamos dispositivos, formación y acompañamiento digital a las familias que más lo necesitan en Asturias.
+        </p>
+        <div class="hero__actions">
+          <a href="#contacto" class="btn btn--primary">Hazte voluntario/a</a>
+          <a href="#que-hacemos" class="btn btn--ghost">Conoce nuestro trabajo ↓</a>
         </div>
-      </a>
-      <p>
-        Llevamos recursos digitales a las familias que más lo necesitan desde 2016.
-        Ningún hogar debería quedar desconectado.
-      </p>
-      <div class="footer-socials">
-        <a href="#" class="social-btn" aria-label="Twitter">𝕏</a>
-        <a href="#" class="social-btn" aria-label="Facebook">f</a>
-        <a href="#" class="social-btn" aria-label="Instagram">◎</a>
-        <a href="#" class="social-btn" aria-label="LinkedIn">in</a>
-        <a href="#" class="social-btn" aria-label="YouTube">▶</a>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__stat-card hero__stat-card--1">
+          <span class="stat-num">+200</span>
+          <span class="stat-label">Familias beneficiadas</span>
+        </div>
+        <div class="hero__stat-card hero__stat-card--2">
+          <span class="stat-num">0€</span>
+          <span class="stat-label">Coste para las familias</span>
+        </div>
+        <div class="hero__device-circle">
+          <svg viewBox="0 0 120 120" class="hero__device-icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60" cy="60" r="55" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+            <rect x="25" y="35" width="70" height="46" rx="5" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+            <rect x="33" y="43" width="54" height="30" rx="3" fill="rgba(0,224,143,0.25)"/>
+            <line x1="38" y1="90" x2="82" y2="90" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linecap="round"/>
+            <line x1="55" y1="81" x2="65" y2="81" stroke="rgba(255,255,255,0.4)" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="60" cy="58" r="10" fill="none" stroke="#00E08F" stroke-width="2"/>
+            <polyline points="55,58 59,62 67,54" stroke="#00E08F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
       </div>
     </div>
-    <div class="footer-col">
-      <h4>Organización</h4>
-      <ul>
-        <li><a href="#mision">Nuestra misión</a></li>
-        <li><a href="#equipo">El equipo</a></li>
-        <li><a href="#">Memorias anuales</a></li>
-        <li><a href="#">Transparencia</a></li>
-        <li><a href="#">Prensa</a></li>
-      </ul>
+    <div class="hero__scroll-hint">
+      <span>Desplaza</span>
+      <div class="hero__scroll-line"></div>
     </div>
-    <div class="footer-col">
-      <h4>Programas</h4>
-      <ul>
-        <li><a href="#programas">Equipos para Todos</a></li>
-        <li><a href="#programas">Conexión Sin Barreras</a></li>
-        <li><a href="#programas">Escuela Digital</a></li>
-        <li><a href="#">Voluntariado</a></li>
-        <li><a href="#">Empresas aliadas</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Contacto</h4>
-      <ul>
-        <li><a href="mailto:hola@conectafamilias.org">hola@conectafamilias.org</a></li>
-        <li><a href="tel:+34900000000">900 000 000 (gratuito)</a></li>
-        <li><a href="#">Calle Gran Vía 28, Madrid</a></li>
-        <li><a href="#donar">Donar ahora</a></li>
-        <li><a href="#">Sede Bilbao · Sede Barcelona</a></li>
-      </ul>
+  </section>
+
+  <!-- TICKER BAND -->
+  <div class="ticker-band">
+    <div class="ticker-inner">
+      <span>Reciclaje de dispositivos</span>
+      <span class="ticker-dot">·</span>
+      <span>Formación digital básica</span>
+      <span class="ticker-dot">·</span>
+      <span>Donación de tablets y ordenadores</span>
+      <span class="ticker-dot">·</span>
+      <span>Voluntariado digital</span>
+      <span class="ticker-dot">·</span>
+      <span>Apoyo educativo</span>
+      <span class="ticker-dot">·</span>
+      <span>Colaboración con centros escolares</span>
+      <span class="ticker-dot">·</span>
+      <span>Reciclaje de dispositivos</span>
+      <span class="ticker-dot">·</span>
+      <span>Formación digital básica</span>
+      <span class="ticker-dot">·</span>
+      <span>Donación de tablets y ordenadores</span>
+      <span class="ticker-dot">·</span>
+      <span>Voluntariado digital</span>
+      <span class="ticker-dot">·</span>
     </div>
   </div>
-  <div class="footer-bottom">
-    <span>© 2025 Conecta Familias · ONG sin ánimo de lucro · CIF: G12345678</span>
-    <span>
-      Hecho con <span class="heart">♥</span> por personas que creen en un mundo más justo ·
-      <a href="#">Política de privacidad</a> · <a href="#">Aviso legal</a>
-    </span>
-  </div>
-</footer>
 
-<!-- Scripts -->
-<script src="scripts/main.js"></script>
+  <!-- MISIÓN -->
+  <section class="section mission" id="mision">
+    <div class="container">
+      <div class="mission__grid">
+        <div class="mission__text reveal">
+          <span class="section-label">Nuestra misión</span>
+          <h2 class="section-title">La brecha digital<br />es una brecha de oportunidades</h2>
+          <p class="mission__para">
+            En Tecnología Para Todos (TPT) creemos que el acceso a la tecnología no debería depender del bolsillo de cada familia. Trabajamos en Asturias para que ningún niño, joven o adulto se quede atrás por no tener un dispositivo o no saber usarlo.
+          </p>
+          <p class="mission__para">
+            Nuestra respuesta es rápida, cercana y humana: conectamos a quienes tienen algo que dar con quienes más lo necesitan.
+          </p>
+          <div class="mission__badges">
+            <div class="badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              Familias en Asturias
+            </div>
+            <div class="badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              Dispositivos donados
+            </div>
+            <div class="badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              Formación incluida
+            </div>
+          </div>
+        </div>
+        <div class="mission__fines reveal">
+          <h3 class="mission__fines-title">Nuestros fines</h3>
+          <ul class="fines-list">
+            <li class="fines-item">
+              <span class="fines-num">01</span>
+              <p>Ayudar a familias sin acceso a la tecnología</p>
+            </li>
+            <li class="fines-item">
+              <span class="fines-num">02</span>
+              <p>Apoyar el desarrollo educativo de jóvenes y niños mediante recursos digitales</p>
+            </li>
+            <li class="fines-item">
+              <span class="fines-num">03</span>
+              <p>Conseguir que todo el mundo pueda usar la tecnología</p>
+            </li>
+            <li class="fines-item">
+              <span class="fines-num">04</span>
+              <p>Reducir las diferencias entre personas con y sin recursos digitales</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- QUÉ HACEMOS -->
+  <section class="section services" id="que-hacemos">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Qué hacemos</span>
+        <h2 class="section-title">Cuatro formas de<br />acortar distancias</h2>
+      </div>
+      <div class="services__grid">
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="8" width="28" height="20" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <line x1="10" y1="36" x2="26" y2="36" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="18" y1="28" x2="18" y2="36" stroke="currentColor" stroke-width="2.5"/>
+              <rect x="30" y="22" width="14" height="20" rx="2" stroke="currentColor" stroke-width="2.5"/>
+              <line x1="37" y1="38" x2="37" y2="40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Donación de dispositivos</h3>
+          <p class="service-card__desc">Tablets, ordenadores y móviles reacondicionados llegan directamente a las familias que más los necesitan, sin coste alguno.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 6L30 18H42L32 26L36 38L24 30L12 38L16 26L6 18H18L24 6Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Formación digital básica</h3>
+          <p class="service-card__desc">Enseñamos a usar la tecnología de forma segura y útil: desde encender un ordenador hasta navegar por internet responsablemente.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="16" r="8" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M8 40c0-8.837 7.163-16 16-16s16 7.163 16 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M36 22l4 4-4 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Red de voluntariado</h3>
+          <p class="service-card__desc">Creamos y coordinamos un equipo de voluntarios comprometidos que acompañan a las familias en todo el proceso.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="10" width="36" height="28" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M14 24h20M14 30h12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="34" cy="30" r="5" fill="var(--accent)" opacity="0.3"/>
+              <path d="M32 30l1.5 1.5L36 28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Colaboración educativa</h3>
+          <p class="service-card__desc">Trabajamos mano a mano con colegios, institutos y empresas para ampliar el alcance de nuestras acciones y maximizar el impacto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACTO / LOCAL -->
+  <section class="section impact" id="impacto">
+    <div class="container">
+      <div class="impact__grid">
+        <div class="impact__left reveal">
+          <span class="section-label">Nuestro espacio</span>
+          <h2 class="section-title">Desde el corazón<br />de Oviedo</h2>
+          <p class="impact__desc">
+            Operamos desde nuestra sede en la <strong>Calle Marqués de Teverga, Plaza de América, Oviedo</strong>. Un espacio de 80 m² donde recibimos donaciones, realizamos formaciones y coordinamos a nuestro equipo de voluntarios.
+          </p>
+          <div class="impact__address-card">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <strong>Sede TPT</strong><br />
+              Calle Marqués de Teverga<br />
+              Plaza de América · Oviedo, Asturias
+            </div>
+          </div>
+        </div>
+        <div class="impact__photos reveal">
+          <div class="photo-stack">
+            <div class="photo-frame photo-frame--back">
+              <img src="assets/images/GFG.jpg" alt="Interior de la sede de TPT" loading="lazy" />
+            </div>
+            <div class="photo-frame photo-frame--front">
+              <img src="assets/images/unnamed.jpg" alt="Sede de TPT en Oviedo" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUÉ DONAR -->
+  <section class="section why-donate">
+    <div class="why-donate__bg"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label section-label--light">Por qué colaborar</span>
+        <h2 class="section-title section-title--light">Cada aportación<br />cambia una historia</h2>
+      </div>
+      <div class="why-donate__cards">
+        <div class="why-card reveal">
+          <div class="why-card__num">01</div>
+          <h3>Transparencia total</h3>
+          <p>Publicamos infografías y análisis anuales para que sepas exactamente dónde va tu dinero y qué logros hemos conseguido.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-card__num">02</div>
+          <h3>Impacto real y cercano</h3>
+          <p>Pon cara a las personas que reciben tu apoyo: compartimos historias reales de familias que han transformado su vida gracias a la tecnología.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-card__num">03</div>
+          <h3>Ventajas fiscales</h3>
+          <p>En España, las donaciones a ONGs tienen deducciones fiscales significativas. Tu generosidad también te beneficia en la declaración de la renta.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-card__num">04</div>
+          <h3>Comunidad y eventos</h3>
+          <p>Los socios y colaboradores tienen acceso a eventos exclusivos donde conectar con personas comprometidas con el cambio social.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DONANTES / COLABORADORES -->
+  <section class="section donors" id="donantes">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Colaboradores</span>
+        <h2 class="section-title">Quienes hacen<br />posible nuestra misión</h2>
+        <p class="donors__intro">Empresas e instituciones que confían en TPT y nos ayudan a llegar más lejos.</p>
+      </div>
+      <div class="donors__logos reveal">
+        <div class="donor-logo">
+          <img src="assets/images/CAIXABANK.png" alt="Colaborador 1" loading="lazy" />
+        </div>
+        <div class="donor-logo">
+          <img src="assets/images/INDITEX.png" alt="Colaborador 2" loading="lazy" />
+        </div>
+        <div class="donor-logo">
+          <img src="assets/images/miisterio.png" alt="Colaborador 3" loading="lazy" />
+        </div>
+      </div>
+      <div class="donors__cta reveal">
+        <p>¿Quieres que tu empresa forme parte de este proyecto?</p>
+        <a href="#contacto" class="btn btn--primary">Conviértete en colaborador</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section contact" id="contacto">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__left reveal">
+          <span class="section-label">Únete</span>
+          <h2 class="section-title">Tres formas de<br />sumar a TPT</h2>
+          <div class="contact__options">
+            <div class="contact-option">
+              <div class="contact-option__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </div>
+              <div>
+                <strong>Donar un dispositivo</strong>
+                <p>Danos una segunda vida a tus dispositivos en desuso. Los reacondicionamos y los ponemos en manos de quien los necesita.</p>
+              </div>
+            </div>
+            <div class="contact-option">
+              <div class="contact-option__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="23" y1="11" x2="17" y2="11"/><line x1="20" y1="8" x2="20" y2="14"/></svg>
+              </div>
+              <div>
+                <strong>Hacerte voluntario/a</strong>
+                <p>Si sabes de tecnología y quieres enseñar, o simplemente quieres aportar tu tiempo, te necesitamos.</p>
+              </div>
+            </div>
+            <div class="contact-option">
+              <div class="contact-option__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+              <div>
+                <strong>Realizar una donación económica</strong>
+                <p>Con tu aportación financiamos formaciones, reacondicionamiento de equipos y llegamos a más familias.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact__form-wrap reveal">
+          <form class="contact-form" id="contactForm" novalidate>
+            <h3 class="contact-form__title">Escríbenos</h3>
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" placeholder="Tu nombre completo" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="interest">Me interesa</label>
+              <select id="interest" name="interest">
+                <option value="">Selecciona una opción</option>
+                <option value="voluntario">Ser voluntario/a</option>
+                <option value="dispositivo">Donar un dispositivo</option>
+                <option value="economica">Donación económica</option>
+                <option value="empresa">Colaboración empresarial</option>
+                <option value="ayuda">Solicitar ayuda</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" rows="4" placeholder="Cuéntanos cómo quieres colaborar o qué necesitas..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Enviar mensaje →</button>
+            <p class="form-note">Respondemos en menos de 48 horas.</p>
+            <div class="form-success" id="formSuccess" hidden>
+              ✓ ¡Mensaje enviado! Nos pondremos en contacto contigo pronto.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/images/logo.jpeg" alt="Logo TPT" class="footer__logo" />
+        <p class="footer__tagline">Tecnología que une,<br />oportunidades que transforma.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#mision">Misión</a></li>
+          <li><a href="#que-hacemos">Qué hacemos</a></li>
+          <li><a href="#impacto">Nuestro espacio</a></li>
+          <li><a href="#donantes">Colaboradores</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4>Dónde estamos</h4>
+        <address>
+          Calle Marqués de Teverga<br />
+          Plaza de América<br />
+          Oviedo, Asturias
+        </address>
+        <div class="footer__socials">
+          <a href="#" aria-label="Instagram" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="TikTok" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2025 Tecnología Para Todos · ONG sin ánimo de lucro · Asturias</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
 </body>
 </html>

@@ -1,149 +1,283 @@
-/* ============================================================
-   layout.css — Responsive breakpoints y media queries
-   Conecta Familias
-   ============================================================ */
+/* ============================================
+   layout.css — Estructura, grid y espaciado
+   Tecnología Para Todos · TPT
+   ============================================ */
 
-/* ── FORM ROW ────────────────────────────────────────────── */
-.form-row {
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ---- CONTAINER ---- */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 5vw, 3rem);
+}
+
+/* ---- SECTION BASE ---- */
+.section {
+  padding-block: clamp(4rem, 8vw, 7rem);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 640px;
+  margin-inline: auto;
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+/* ---- NAV ---- */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background 0.35s ease, box-shadow 0.35s ease;
+}
+
+.nav.scrolled {
+  background: rgba(10, 14, 28, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.06);
+}
+
+.nav__inner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  height: 72px;
+}
+
+.nav__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.nav__logo {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.nav__links {
+  display: flex;
+  list-style: none;
+  gap: 0.25rem;
+  margin-left: auto;
+}
+
+.nav__links a {
+  display: block;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.nav__cta {
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+}
+
+.nav__burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  margin-left: auto;
+}
+
+.nav__burger span {
+  display: block;
+  height: 2px;
+  width: 24px;
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* ---- HERO ---- */
+.hero {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 72px;
+}
+
+.hero__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 14px;
+  align-items: center;
+  gap: 3rem;
+  padding-block: 5rem 3rem;
 }
 
-/* ── TABLET / MEDIUM ─────────────────────────────────────── */
+.hero__visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 380px;
+}
+
+/* ---- SERVICES GRID ---- */
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+/* ---- MISSION GRID ---- */
+.mission__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+}
+
+/* ---- IMPACT GRID ---- */
+.impact__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+}
+
+/* ---- WHY DONATE CARDS ---- */
+.why-donate__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+/* ---- DONORS LOGOS ---- */
+.donors__logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+/* ---- CONTACT GRID ---- */
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+}
+
+/* ---- FOOTER ---- */
+.footer__inner {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 3rem;
+  padding-block: 3rem;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
 @media (max-width: 1024px) {
-
-  /* Hero */
-  .hero {
-    grid-template-columns: 1fr;
-    padding-top: 120px;
-  }
-  .hero-visual {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-
-  /* Mission */
-  .mission {
-    grid-template-columns: 1fr;
-  }
-  .mission-visual {
-    max-width: 480px;
-  }
-
-  /* Programs */
-  .programs-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  /* Impact */
-  .impact-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  /* Team */
-  .team-grid {
+  .services__grid,
+  .why-donate__cards {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  /* CTA Band */
-  .cta-band {
-    grid-template-columns: 1fr;
-  }
-  .cta-buttons {
-    flex-direction: row;
-  }
-
-  /* Footer */
-  .footer-top {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  /* Steps */
-  .steps {
-    grid-template-columns: 1fr 1fr;
-  }
-  .steps::before {
-    display: none;
-  }
-
-  /* Donate */
-  .donate-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
-/* ── MOBILE / SMALL ──────────────────────────────────────── */
-@media (max-width: 640px) {
-
-  /* Nav */
-  nav ul {
+@media (max-width: 768px) {
+  .nav__links,
+  .nav__cta {
     display: none;
   }
-  nav ul.open {
+
+  .nav__links.open {
     display: flex;
     flex-direction: column;
     position: fixed;
-    inset: 0;
-    top: 70px;
-    background: var(--sand);
-    padding: 40px 5%;
-    gap: 24px;
+    top: 72px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 14, 28, 0.97);
+    padding: 2rem;
+    gap: 0.5rem;
     align-items: flex-start;
-    z-index: 99;
+    justify-content: flex-start;
   }
-  .hamburger {
+
+  .nav__links.open a {
+    font-size: 1.25rem;
+    padding: 0.75rem 1rem;
+    width: 100%;
+  }
+
+  .nav__burger {
     display: flex;
   }
 
-  /* Hero */
-  .hero {
-    padding: 100px 5% 60px;
+  .hero__inner {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
-  .hero-stats {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .hero-card-1 { height: 280px; }
 
-  /* Floating badges */
-  .floating-badge.badge-1,
-  .floating-badge.badge-2 {
+  .hero__visual {
     display: none;
   }
 
-  /* Programs */
-  .programs-grid {
+  .hero__actions {
+    justify-content: center;
+  }
+
+  .mission__grid,
+  .impact__grid,
+  .contact__grid {
     grid-template-columns: 1fr;
   }
 
-  /* Impact */
-  .impact-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  /* Testimonials */
-  .testi-grid {
+  .services__grid,
+  .why-donate__cards {
     grid-template-columns: 1fr;
   }
 
-  /* Team */
-  .team-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  /* Steps */
-  .steps {
+  .footer__inner {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
-  /* Footer */
-  .footer-top {
-    grid-template-columns: 1fr;
+  .mission__badges {
+    justify-content: center;
   }
+}
 
-  /* Form */
-  .form-row {
+@media (max-width: 480px) {
+  .why-donate__cards {
     grid-template-columns: 1fr;
   }
 }
